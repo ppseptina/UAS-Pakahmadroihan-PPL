@@ -80,4 +80,33 @@ pengembalian terhubung dengan peminjaman (untuk mencatat pengembalian console).
 pengembalian terhubung dengan console (console yang dikembalikan).
 Sistem ini membantu dalam mengelola proses penyewaan console, mencatat transaksi peminjaman dan pengembalian, serta mengelola data pelanggan dan admin.
 
+# Skema Actor (USE CASE)
+Aktor (Pengguna Sistem) Tidak Ditampilkan
+Diagram ini lebih fokus pada proses dalam sistem daripada siapa yang menggunakannya. Biasanya, aktor dalam sistem ini bisa berupa pelanggan dan admin/operator.
+Use Case (Fungsi dalam Sistem)
 
+Data Pelanggan & Input Pelanggan
+Sistem memiliki fitur untuk mengelola data pelanggan. Saat ada pelanggan baru, sistem akan memasukkan (input) informasi pelanggan ke dalam database.
+
+Peminjaman & Pengembalian
+Pelanggan bisa melakukan peminjaman barang, dan dalam proses ini, sistem akan mencatat informasi peminjaman.
+Saat pelanggan mengembalikan barang, sistem akan memperbarui status peminjaman.
+Pengembalian barang di-include dalam peminjaman, artinya setiap peminjaman pasti memiliki proses pengembalian.
+
+Data Console & Input Console
+Sistem juga memiliki data console untuk mengelola informasi yang dimasukkan ke dalam sistem. Input console digunakan untuk memasukkan data baru ke dalam database.
+
+Manipulasi Data
+Sistem dapat melakukan manipulasi data, misalnya mengedit, menghapus, atau memperbarui informasi yang sudah ada.
+Hubungan Include
+
+Beberapa fungsi dalam sistem saling terkait. Misalnya, peminjaman membutuhkan proses pengembalian, sehingga ada hubungan Include antara kedua proses ini.
+Input pelanggan dan input console juga berkaitan dengan data pelanggan dan data console.
+Secara keseluruhan, diagram ini menunjukkan bagaimana data pelanggan dan peminjaman barang dikelola dalam sistem, termasuk pencatatan, manipulasi, dan hubungan antar proses yang ada
+
+## DIAGRAM
+[Gambar Diagram penyewaan] (https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22DIAGRAM%20PENYEWAAN.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-02-03T16%3A32%3A56.511Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2F02d280739c174c2f%2FDIAGRAM%2520PENYEWAAN.png%3FExpires%3D1833208377%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DHxnBY7RbhjVwUnKjvhciTy-NnM7fpKWEAesflJUdOTLNfG7acdsNxQ6ln9iKfDu7lvpYmJfiejJCYSCLOfoMiqSfgIMosx-Row7ZwvbVZrvbS-w7OQxDt1fCrht1DlRhhWqoee1uGbdcmtkCGXV1m26hlgovKMBo4Sxsj4Ez6OqzvpNswgW8~S~F5yZa~3MFKnFvqBCxJnBPNvElpqxnmxNMwOVmSY3nTfrSAxzKeSArJF5WpigdZyss~hvxeupuWBj5U6yawMgBTgjcpF0or98sOvdzRY1YINyB0wJrWU6XQDsmPDcM6lvKx9WHjU5z7vhKdMPLntXgEooT9tDx6g__%22%7D)
+
+[Gambar Diagram pengembalian] (https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22DIAGRAM%20PENGEMBALIAN.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-02-03T16%3A47%3A57.227Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2Fbf7540b55adb43f3%2FDIAGRAM%2520PENGEMBALIAN.png%3FExpires%3D1833209277%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DMLeMhCiRJeBqNxAFZkVQFwr9blG3Vv0y-1YgftGmRhR7CKvrhkPSd8Z5hPhnZQ-8bNMPGPOmsPyntwgRUBnMODvm18jpY66eFSNtNhLlYb4NFdAoYOp48THw6o1zGtOyfklSpIjmh0~GeFS6SqzeU-zqw5P1Q8DpYRzWO6ToPD21Azmy-jtOhhCPAR-aTdNdIi2S3naPG75G0UvRIxSDWyaYSv1jP68TRfljQ1ZCpDByAcMs9hFuIGD3XJx0gNV59rmPaKUYS9LTjaFtszUgcQWPWeLofasEqJ6b3kHSHrfey7yzym0oF-1EjQW4DmY6Q-06TPJ7nGIaowIjV8jvug__%22%7D)
+
+[Gambar Use Case] (https://imagekit.io/tools/asset-public-link?detail=%7B%22name%22%3A%22USE%20CASE.png%22%2C%22type%22%3A%22image%2Fpng%22%2C%22signedurl_expire%22%3A%222028-02-03T16%3A48%3A55.165Z%22%2C%22signedUrl%22%3A%22https%3A%2F%2Fmedia-hosting.imagekit.io%2F%2F53c80cbba8e347d5%2FUSE%2520CASE.png%3FExpires%3D1833209335%26Key-Pair-Id%3DK2ZIVPTIP2VGHC%26Signature%3DEQX9CBmJvSQfqTTbdZr5S7OKbrMqTb918-pVk01qbXTiW8vJpEkFXVPQ2DASjVwGQ7Jz1yXn~SC-M7EseboTWr6KdRQkyiI9FrkFYxTd2f9yOA3VDX6rwiy0VOTas9paY5l3q8skumYbth7jH4E4lkRgVM1fb02NMWux-aYmrOHLNtiWTkmf81BgrxZSSZ~90ghflxJUctGFquhpTamh9MvLRsIq1okDwOpdXPIKsfb4QaXXLJuhLuyVhxqWopPw04df91vTBmGCvLRZ5-tOVWE45pHy3qScj-XP5FGTa-YYsqxDzcvD8-WRCQqw5adDuj-OlYnhxO3ZABbI26TgpA__%22%7D)
