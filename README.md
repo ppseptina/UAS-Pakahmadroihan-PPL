@@ -11,7 +11,6 @@ Pada saat ini usaha rental console sudah menjadi hal yang sering ditemukan, sega
 ### METODE PENGUMPULAN DATA
 
 Dalam pengumpulan data menggunakan metode Research & Development peneliti melakukan:
-
 Studi Pustaka (Literature Study)
 Studi yang dilakukan peneliti adalah browsing internet mengenai judul yang diambil dalam penelitian sebagai referensi penyusunan Tugas ini.
 Studi lapangan (Field Study)
